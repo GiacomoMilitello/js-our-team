@@ -50,17 +50,21 @@ console.log( team );
 
 for(let i = 0; i < team.length; i++) {
     let member = team[i];
-    document.querySelector("main .row").innerHTML += `
-         <div class="card col">
-                 <img class="card-img-top" src='${member.photo}' alt="${member.name}" />
-                 <div class="card-body">
-                     <h4 class="card-title">
-                     ${member.name}
-                     </h4>
-                     <p class="card-text">
-                     ${member.role}
-                     </p>
-                 </div>
-             </div>
+    document.querySelector("#container").innerHTML += `
+        <div class="box-1 calc-card-3 rounded-5">
+            <div class="box-2 rounded-5">
+                <div class="box rounded-5 p-3 py-4">
+                    <figure class="w-75 mx-auto">
+                        <img class="img-fluid rounded-5 " src='${member.photo}' alt="${member.name}" />
+                    </figure>
+         
+                    <div class="">
+                        <h4 class="text-center neon-text">${member.name}</h4>
+                        <p class="text-center ">${member.role}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+         
     `
 }

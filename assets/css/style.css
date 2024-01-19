@@ -1,1 +1,49 @@
-/* main{background-image: url(../img/angela-caroll-chief-editor.jpg);} */
+*{
+    font-family: 'Grape Nuts', cursive;
+}
+body{
+    background-image: url(../img/bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+#container {
+    width: 100%;
+    gap: 2vw;
+}
+.calc-card-3 {
+    box-sizing: border-box;
+    max-width: calc((100% / 3) - 1.4vw);
+}
+.neon-text {
+    color: rgb(116, 65, 138);
+    text-shadow: 0 0 10px white, 0 0 20px pink;
+    font-family: 'Indie Flower', cursive;
+}
+.box-1{
+    border: 1px solid;
+    border-image-source: linear-gradient(to right, skyblue, pink);
+    border-image-slice: 1;
+    transform: rotate(90deg);
+    box-shadow: 0 0 10px skyblue, 0 0 20px pink;
+}
+.box-2 {
+    border: 1px solid;
+    border-image-source: linear-gradient(to right, skyblue, pink);
+    border-image-slice: 1;
+    transform: translate(10px, 10px);
+    transform: rotate(-50deg);
+    box-shadow: 0 0 10px skyblue, 0 0 20px pink;
+}
+.box {
+    border: 1px solid;
+    border-image-source: linear-gradient(to right, skyblue, pink);
+    border-image-slice: 1;
+    transform: rotate(-40deg);
+    box-shadow: 0 0 10px skyblue, 0 0 20px pink;
+}
+img{
+    box-shadow: 10px 17px 37px 18px rgba(0,102,255,0.87);
+    -webkit-box-shadow: 10px 17px 37px 18px rgba(0,102,255,0.87);
+    -moz-box-shadow: 10px 17px 37px 18px rgba(0,102,255,0.87);
+}
